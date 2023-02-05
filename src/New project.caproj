@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Player" sid="273566838185147">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="168819294439315">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="14" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="478006199492191" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\Sprites guardião.png">
+                        <collision-poly>
+                            <point x="1" y="0.460227" />
+                            <point x="1" y="0.443184" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao12.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao13.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao14.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\guardiao2.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="935048552009120" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.521739" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\character.png">
+                        <collision-poly>
+                            <point x="0.466667" y="0" />
+                            <point x="1" y="0.0869565" />
+                            <point x="1" y="1" />
+                            <point x="0.733333" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\character.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0.0454545" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.521739">
+                        <collision-poly>
+                            <point x="0.466667" y="0" />
+                            <point x="1" y="0.0869565" />
+                            <point x="1" y="1" />
+                            <point x="0.733333" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\character.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="971189001578075" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\character.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.0454545" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.666667" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.0454545" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.0454545" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.0454545" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="10" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="248977966208380" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\walk-right\walk1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\walk-right\walk2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\walk-right\walk3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\walk-right\walk4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\walk-right\walk5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\walk-right\walk6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\walk-right\walk7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\walk-right\walk8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\walk-right\walk9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\walk-right\walk10.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="155267291896139" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="0" name="AddPlant" pingpong="0" repeatcount="1" repeatto="0" sid="880375019550327" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\addPlant\addPlant1.png">
+                        <collision-poly>
+                            <point x="0.453125" y="0.453125" />
+                            <point x="0.5" y="0.140625" />
+                            <point x="0.734375" y="0.265625" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.34375" y="0.65625" />
+                            <point x="0.234375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\addPlant\addPlant2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\addPlant\addPlant3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\addPlant\addPlant4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\addPlant\addPlant5.png" />
+                    <frame duration="1" hotspotX="0.625" hotspotY="0.515625" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\addPlant\addPlant6.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="character2" sid="380210115994183">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="770016146809181" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\My project\Assets\Art\gfx\character.png">
+                        <collision-poly>
+                            <point x="0.0257353" y="0.0273438" />
+                            <point x="0.738971" y="0.277344" />
+                            <point x="0.466912" y="0.433594" />
+                            <point x="0.0404412" y="0.957031" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="836288258002753">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="enemy" sid="483256903848470">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="292040993024357" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="921799615607462">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="123673819099675" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.28125" y="0.123047" />
+                            <point x="0.671875" y="0.126953" />
+                            <point x="0.673828" y="0.867188" />
+                            <point x="0.285156" y="0.873047" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\log.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.6875" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\log.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.713942" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="end" sid="895466596415918">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="start" sid="745285659045236">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="345846385758100" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wave" sid="549460536238525">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="TextWave" sid="411535671523952">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextHealth" sid="883073461716315">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="basetowerdefense" sid="815936606563336">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="871990720917447" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\base-towerdefense.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.445313" y="0" />
+                            <point x="0.992188" y="0.015625" />
+                            <point x="1" y="0.96875" />
+                            <point x="0.804688" y="1" />
+                            <point x="0.34375" y="1" />
+                            <point x="0" y="0.992188" />
+                            <point x="0" y="0.476563" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="turrent" sid="691540861493304">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="build" sid="932790854712583" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Turret" sid="877502832595917">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="683361098171777" speed="5">
+                    <frame duration="1" hotspotX="0.71875" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.114285" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="17" loop="0" name="attack" pingpong="0" repeatcount="1" repeatto="0" sid="899416304263334" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites12.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites13.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites14.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites15.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites16.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\characters\cacto\cacto sprites17.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="projetil" sid="446719516779137">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="847152995091344">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="809963099458605" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\Overworld.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.234375" />
+                            <point x="0.572917" y="0.151042" />
+                            <point x="0.760416" y="0.40625" />
+                            <point x="0.666667" y="0.734375" />
+                            <point x="0.171875" y="0.744792" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="turrentEffect" sid="754871295762717">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="236343299884330" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\objects.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlantaBasica" sid="430263178476453">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821299535674154" speed="5">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.521739" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\Overworld.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="561729166604375">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="377826617731831">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="colisoes" sid="343132755956627">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ForestCenter" sid="358628064557299">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="601931731114869" speed="0">
+                    <frame duration="1" hotspotX="0.502591" hotspotY="0.503876" original-source="C:\Users\jr_cd\Downloads\drive-download-20230205T152302Z-001\SPRITE-FOREST-HEALTHY_1.png">
+                        <collision-poly>
+                            <point x="0.209845" y="0.503876" />
+                            <point x="0.181347" y="0.209302" />
+                            <point x="0.28886" y="0.0426356" />
+                            <point x="0.538861" y="0.00775188" />
+                            <point x="0.759068" y="0.0426356" />
+                            <point x="0.831606" y="0.534884" />
+                            <point x="0.989637" y="0.670543" />
+                            <point x="0.955959" y="0.872093" />
+                            <point x="0.818653" y="0.930233" />
+                            <point x="0.497409" y="1" />
+                            <point x="0.0259067" y="0.883721" />
+                            <point x="0" y="0.658915" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502591" hotspotY="0.503876" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\SPRITE-FOREST-WEAK.png">
+                        <collision-poly>
+                            <point x="0.176166" y="0.263566" />
+                            <point x="0.497409" y="0" />
+                            <point x="0.829016" y="0.255814" />
+                            <point x="0.746114" y="0.496124" />
+                            <point x="0.92228" y="0.883721" />
+                            <point x="0.497409" y="1" />
+                            <point x="0.0777202" y="0.883721" />
+                            <point x="0.253886" y="0.496124" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\SPRITE-FOREST-DANGER.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.234375" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.234375" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.921875" y="0.882813" />
+                            <point x="0.5" y="1" />
+                            <point x="0.078125" y="0.882813" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TilemapBackGround" sid="755203614189115">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\tileMap/spriteTile.png" />
+            <tiles />
+        </object-type>
+        <object-type name="TilemapRoad" sid="434944844328755">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\jr_cd\Downloads\gfx\gfx\spritesJogo\tileMap/spriteTile.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Colisor" sid="660311353400299">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286315718593268" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Enemies.xml</event-sheet>
+        <event-sheet>Player.xml</event-sheet>
+        <event-sheet>turrent.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="2" />
+        <global-instance type="Mouse" uid="22" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

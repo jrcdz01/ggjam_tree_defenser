@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Enemies</name>
+    <events>
+        <event-block sid="738701683955901">
+            <conditions>
+                <condition id="-18" name="On created" sid="744756345711847" type="enemy" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="213528405400613" type="enemy">
+                    <param id="0" name="X">end.X</param>
+                    <param id="1" name="Y">end.Y</param>
+                </action>
+                <action id="5" name="Set frame" sid="344782663708769" type="enemy">
+                    <param id="0" name="Frame number">random(4)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="406146987231954">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="385913138586187" type="enemy" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="458340761034698" type="enemy" />
+            </actions>
+        </event-block>
+        <event-block sid="484185374303766">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="959763649045063" type="enemy" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="826722395184327" type="enemy" />
+                <action id="-11" name="Subtract from" sid="668747202495979" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="464279605592795">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="268361819180742" type="enemy">
+                    <param id="0" name="Object">projetil</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="248549833037477" type="enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="831000876098754">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="985159273060088" type="enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="155634000481555" type="enemy" />
+                <action id="-11" name="Subtract from" sid="494182784527466" type="System">
+                    <param id="0" name="Variable">EnemyPresent</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

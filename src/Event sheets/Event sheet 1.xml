@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <include>Player</include>
+        <include>Enemies</include>
+        <include>turrent</include>
+        <variable constant="0" name="sementes" sid="795820362210621" static="0" type="number">5</variable>
+        <variable constant="0" name="Timer" sid="696068712043645" static="0" type="number">0</variable>
+        <variable constant="0" name="EnemyPresent" sid="273695324073949" static="0" type="number">0</variable>
+        <variable constant="0" name="Health" sid="644610472489690" static="0" type="number">5</variable>
+        <variable constant="0" name="Wave" sid="760954821975767" static="0" type="number">0</variable>
+        <event-block sid="280204957464377">
+            <conditions>
+                <condition id="0" name="On clicked" sid="780023477582947" type="wave" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="824449819407848" type="System">
+                    <param id="0" name="Variable">Wave</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="735674816682808" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="622996027000844">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="467629842065679" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="110197761014728" type="TextWave">
+                    <param id="0" name="Text">&quot;Wave: &quot;&amp;Wave</param>
+                </action>
+                <action id="0" name="Set text" sid="543140980084572" type="TextHealth">
+                    <param id="0" name="Text">&quot;Health: &quot;&amp;Health</param>
+                </action>
+                <action id="0" name="Set text" sid="864719878576018" type="colisoes">
+                    <param id="0" name="Text">&quot;Sementes - &quot;&amp;sementes</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="808326144852712">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="126272488167293" type="System">
+                    <param id="0" name="Variable">EnemyPresent</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="255667540138887" type="wave">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="293063432519938">
+            <conditions>
+                <condition id="-22" name="Else" sid="370898843933581" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="927315693704991" type="wave">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="249678224182199">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="428084574867025" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="664262277784004">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="654364157319863" type="System">
+                            <param id="0" name="Interval (seconds)">1.5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="170417375921198" type="System">
+                            <param id="0" name="Variable">EnemyPresent</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">Wave</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="950737076387695" type="start">
+                            <param id="0" name="Object">enemy</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="360714474787866" type="System">
+                            <param id="0" name="Variable">EnemyPresent</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="180777751580578">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="447590174292391" type="System">
+                    <param id="0" name="Variable">EnemyPresent</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Wave</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="457111602128056" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="733772471700276">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="863115363182365" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="646598432080996" type="System" />
+                <action id="-21" name="Reset global variables" sid="315591128986240" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
